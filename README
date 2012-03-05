@@ -1,3 +1,9 @@
+This fork can be installed by adding the following to your Gemfile:
+
+  gem "remarkable_activerecord", :git => "git://github.com/sujoyg/remarkable.git"
+
+I have used this with Rails 3.2.1 for some basic association tests.
+
 = Remarkable
 
 You can read this file nicely formatted at the Rubyforge project page:

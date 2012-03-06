@@ -4,13 +4,13 @@ This fork can be installed by adding the following to your Gemfile:
 
 I have used this with Rails 3.2.1 for some basic association tests.
 
-= Remarkable
+# Remarkable
 
 You can read this file nicely formatted at the Rubyforge project page:
 
   http://remarkable.rubyforge.org/
 
-== Description
+## Description
 
 Remarkable is a framework for rspec matchers that supports macros and I18n. It's
 constituted of three pieces:
@@ -33,7 +33,7 @@ constituted of three pieces:
 
 In each folder above, you can find a README more detailed description of each piece.
 
-== Why use Remarkable for Rails?
+## Why use Remarkable for Rails?
 
 * The only one with matchers for all ActiveRecord validations, with support to
   all options (except :on and the option :with in validates_format_of);
@@ -66,13 +66,13 @@ In each folder above, you can find a README more detailed description of each pi
 
 * It has your style. You can choose between:
 
-    1) it { should validate_numericality_of(:age).greater_than(18).only_integer }
+    1. it { should validate_numericality_of(:age).greater_than(18).only_integer }
 
-    2) it { should validate_numericality_of(:age, :greater_than => 18, :only_integer => true) }
+    2. it { should validate_numericality_of(:age, :greater_than => 18, :only_integer => true) }
 
-    3) should_validate_numericality_of :age, :greater_than => 18, :only_integer => true
+    3. should_validate_numericality_of :age, :greater_than => 18, :only_integer => true
 
-    4) should_validate_numericality_of :age do |m|
+    4. should_validate_numericality_of :age do |m|
          m.only_integer
          m.greater_than 18
          # Or: m.greater_than = 18
@@ -80,7 +80,7 @@ In each folder above, you can find a README more detailed description of each pi
 
 Remarkable Rails requires rspec >= 2.0.0 and rspec-rails >= 2.0.0.
 
-== Install on Rails
+## Install on Rails
 
 Install the gem:
 
@@ -91,7 +91,7 @@ This will install remarkable, remarkable_activerecord and remarkable_rails gems.
 Inside Rails you need to require just this gem. If you are using ActiveRecord,
 it will automatically require the remarkable_activerecord gem.
 
-== Rails 3
+## Rails 3
 
 In Rails 3, in order to rspec load properly, you have to use this configuration
 on your Gemfile
@@ -123,13 +123,13 @@ Please note, due to the massive refactoring in Rails 3 and RSpec 2, we are not s
 backwards compatibility with Rails 2 or RSpec 1. You will need to use the Remarkable 3.x series
 if you are still using Rails 2.
 
-== How to setup your machine to contribute with remarkable?
+## How to setup your machine to contribute with remarkable?
 
 gem install bundler
 bundle install
 rake # red, green, refactor
 
-== Developers
+## Developers
 
 If you are developing matchers, for example hpricot matchers, you need to install
 only the remarkable "core" gem:
@@ -141,7 +141,7 @@ please drop us a line. We are currently searching for people who wants to join
 us and provide matchers for Datamapper, Sequel, Sinatra and all other possible
 options. :)
 
-== Browse the documentation
+## Browse the documentation
 
 Remarkable:
   http://remarkable.rubyforge.org/core/
@@ -154,16 +154,16 @@ Remarkable Rails:
   http://remarkable.rubyforge.org/rails/
   http://remarkable.rubyforge.org/rails/classes/Remarkable/ActionController/Matchers.html
 
-== More information
+## More information
 
 Google group: http://groups.google.com/group/remarkable-core
 Bug tracking: http://github.com/remarkable/remarkable/issues
 
-== Contributors
+## Contributors
 
 http://github.com/remarkable/remarkable/contributors
 
-== LICENSE
+## LICENSE
 
 All projects are under MIT LICENSE.
 

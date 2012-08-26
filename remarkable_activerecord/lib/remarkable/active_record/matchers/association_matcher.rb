@@ -7,6 +7,7 @@ module Remarkable
         optionals :through, :source, :source_type, :class_name, :foreign_key, :dependent, :join_table, :as
         optionals :select, :conditions, :include, :group, :having, :order, :limit, :offset, :finder_sql, :counter_sql
         optionals :uniq, :readonly, :validate, :autosave, :polymorphic, :counter_cache, :default => true
+	optionals :before_add, :after_add, :before_remove, :after_remove
 
         collection_assertions :association_exists?, :macro_matches?, :through_exists?, :source_exists?,
                               :klass_exists?, :join_table_exists?, :foreign_key_exists?, :polymorphic_exists?,

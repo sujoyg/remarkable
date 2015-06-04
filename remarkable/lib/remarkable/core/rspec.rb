@@ -10,7 +10,7 @@ module RSpec #:nodoc:
   end
 
   module Core #:nodoc:
-    class ExampleGroup #:nodoc:
+    class Configuration #:nodoc:
       # Overwrites to provide I18n on example disabled message.
       #
       def _xexample(description=nil, opts={}, &block)
